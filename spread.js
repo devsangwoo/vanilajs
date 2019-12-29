@@ -20,3 +20,12 @@ console.log(user);
 
 //rest 연습
 //parameter란 매개변수로 함수에게 전달해줄 인자들을 말함.
+//... (언팩)은 파라매터를 expand시켜주는것임
+//rest는 받은 모든 값을 하나의 변수로 축소시켜줌(contract)
+//...언팩이지만 파라매터부분에들어가면 rest로 쓰임
+//rest는 배열로 받아줌
+const bestfriendMaker = (firstOne, ...rest) => {
+  console.log(`My best friend is ${firstOne}`);
+  console.log(rest);
+};
+bestfriendMaker('cho', 'kim', 'xia');
